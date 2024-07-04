@@ -13,8 +13,27 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        orange: {
+          0: "#FF9E51"
+        }
+      },
+
+      keyframes: {
+        up: {
+          '0%': { position: 'relative', top: '-100px' },
+          '100%': { position: 'relative', top: '0px' },
+        }
+      },
+
+      animation: {
+        up: 'up 1s ease-in-out infinite',
+      }
     },
+    
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 };
 export default config;
