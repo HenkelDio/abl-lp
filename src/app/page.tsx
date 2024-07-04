@@ -4,7 +4,7 @@ export default function Index() {
   return (
     <>
       <section className="w-full h-[500px] px-4">
-        <div className="w-full h-full bg-[url('../../assets/teste.png')] bg-fixed rounded p-2 pr-8 animate-fade-right">
+        <div className="w-full h-full bg-[url('../../assets/teste.png')] bg-fixed rounded p-2 pr-8 animate-fade-right bg-no-repeat">
           <div className="w-full h-full flex items-end justify-center flex-col animate-fade-up">
             <div className="bg-white p-4 py-10 opacity-1 rounded-md text-right flex flex-col shadow-lg">
               <h1 className="text-3xl text-black font-semibold">Empresa especializada em entregas de GLP</h1>
