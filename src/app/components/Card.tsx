@@ -1,14 +1,15 @@
 'use client'
 
 import { motion, Variants } from "framer-motion";
-import { FaWhatsapp } from "react-icons/fa";
 
 const cardVariants: Variants = {
   offscreen: {
-    y: 300
+    y: 300,
+    display: 'none'
   },
   onscreen: {
     y: 50,
+    display: 'block',
     transition: {
       type: "spring",
       bounce: 0.4,
@@ -17,23 +18,28 @@ const cardVariants: Variants = {
   }
 }
 
-export default function Card() {
+type IProps = {
+  label: string,
+  description: string,
+  icon: React.ReactNode
+}
+
+export default function Card({label, description, icon}: IProps) {
   return (
     <motion.div
-      initial="offscreen"
-      whileInView="onscreen"
+      whileHover={{ scale: 1.1 }}
+      onHoverStart={e => {}}
+      onHoverEnd={e => {}}
     >
-      <motion.div variants={cardVariants}>
-      <div className="w-80 h-96 rounded-md p-6">
+      <div className="w-80 h-auto rounded-md p-6 cursor-pointer">
         <div className="text-8xl flex justify-center">
-          <FaWhatsapp />
+          {icon}
         </div>
-        <div className="text-center">
-          <h2 className="text-2xl font-bold">Whatsapp</h2>
-          <h1 className="text-3xl">41 99999-9999</h1>
+        <div className="text-center mt-7">
+          <h2 className="text-2xl font-bold">{label}</h2>
+          <h1 className="text-3xl">{description}</h1>
         </div>
       </div>
-      </motion.div>
     </motion.div>
   )
 }
