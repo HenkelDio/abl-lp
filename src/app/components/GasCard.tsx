@@ -27,7 +27,7 @@ export default function GasCard({ image }: TProps) {
           <Image src={image} alt="p20" className="relative top-[-50px]"/>
         </div>
         <div>
-        <button type="submit" className="text-white font-semibold mt-5 bg-orange-0 hover:bg-orange-400 focus:ring-4 focus:outline-none focus:bg-orange-400 rounded-lg text-sm sm:w-auto px-20 py-5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:bg-orange-600 absolute bottom-[-30px] left-[140px]">Fazer pedido</button>
+        <button type="submit" className="text-white font-semibold mt-5 bg-orange-0 hover:bg-orange-400 focus:ring-4 focus:outline-none focus:bg-orange-400 rounded-lg text-sm sm:w-auto px-20 py-5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:bg-orange-600 absolute bottom-[-30px] left-[125px]">Fazer pedido</button>
         </div>
       </div>
     </>

@@ -26,15 +26,15 @@ export default function Index() {
       <section className="mt-20 h-[420px]">
         <h1 className="text-center font-semibold text-2xl">Contate-nos</h1>
         <div className="flex gap-10 justify-center items-center p-2">
-          <Card label="Whatsapp" description="41 99999-9999" icon={<FaWhatsapp />} />
+          <Card label="Whatsapp" description="41 98409-5429" icon={<FaWhatsapp />} />
           <div className="w-1 h-28 bg-gray-400"></div>
-          <Card label="E-mail" description="exemplo@mail.com" icon={<IoMdMail  />} />
+          <Card label="E-mail" description="cavilato@cavilato.com.br" icon={<IoMdMail  />} />
           <div className="w-1 h-28 bg-gray-400"></div>
           <Card label="Telefone" description="41 3030-3030" icon={<FaPhoneAlt />} />
         </div>
       </section>
       <section className="w-full h-[600px] max-w-[1200px] mx-auto flex gap-10 justify-center">
-       <GasCard image={p20}/>
+       <GasCard image={p45}/>
        <GasCard image={p45}/>
       </section>
       <section className="mt-10 mb-28">

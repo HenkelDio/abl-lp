@@ -37,7 +37,7 @@ export default function Card({label, description, icon}: IProps) {
         </div>
         <div className="text-center mt-7">
           <h2 className="text-2xl font-bold">{label}</h2>
-          <h1 className="text-3xl">{description}</h1>
+          <h1 className="text-2 xl">{description}</h1>
         </div>
       </div>
     </motion.div>
