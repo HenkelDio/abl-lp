@@ -31,7 +31,7 @@ export default function Card({label, description, icon}: IProps) {
       onHoverStart={e => {}}
       onHoverEnd={e => {}}
     >
-      <div className="w-80 h-auto rounded-md p-6 cursor-pointer">
+      <div className="md:w-80 h-auto rounded-md p-6 cursor-pointer">
         <div className="text-8xl flex justify-center">
           {icon}
         </div>
