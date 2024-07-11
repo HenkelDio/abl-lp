@@ -57,9 +57,6 @@ export default function Header() {
 
       <motion.header
         className="flex justify-between items-center p-6 font-semibold sticky z-50 top-0 bg-white md:justify-around"
-        initial={{ y: 0 }}
-        animate={{ y: showHeader ? 0 : -100 }}
-        transition={{ duration: 0.3 }}
       >
 
         <div>
