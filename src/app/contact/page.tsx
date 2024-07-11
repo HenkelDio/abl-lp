@@ -7,7 +7,7 @@ export default function Contact() {
     <div className="mb-10">
     <div className="flex flex-col justify-center items-center ">
       <div className="flex-col flex justify-center items-center">
-        <div className="bg-orange-0 md:w-[1000px] md:h-[150px] h-[200px] text-5xl font-bold flex justify-center items-center">
+        <div className="bg-orange-0 md:w-[1000px] w-full md:h-[150px] h-[200px] text-5xl font-bold flex justify-center items-center">
           <h1 className="relative">Nossos <br></br>contatos</h1>
         </div>
        <div className="px-5 md:px-0">

@@ -20,7 +20,7 @@ export default function Index() {
               <p className="mt-2 text-gray-600">Trabalhamos sempre com o melhor atendimento</p>
             </div>
             <Link href="https://api.whatsapp.com/send?phone=5541984095429&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20pedido%20de%20g%C3%A1s.">
-              <button type="submit" className="text-white font-semibold mt-5 bg-orange-0 hover:bg-orange-400 focus:ring-4 focus:outline-none focus:bg-orange-400 rounded-lg text-sm sm:w-auto md:px-20 px-40 py-5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:bg-orange-600">Fazer pedido</button>
+              <button type="submit" className="text-white font-semibold mt-5 bg-orange-0 hover:bg-orange-400 focus:ring-4 focus:outline-none focus:bg-orange-400 rounded-lg md:text-sm text-md sm:w-auto md:px-20 px-32 py-5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:bg-orange-600">Fazer pedido</button>
             </Link>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function Index() {
       </section>
       <section className="mt-12 mb-28">
         <h1 className="text-center font-semibold text-2xl mb-5">Um pouco sobre nós</h1>
-        <div className="bg-orange-400 w-full h-[280px] flex justify-center items-center p-5 gap-10 font-medium text-white">
+        <div className="bg-orange-400 w-full md:h-[280px] flex justify-center items-center p-5 gap-10 font-medium text-white">
           <div className="w-[300px]">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, assumenda earum odio minima asperiores enim dolor suscipit temporibus delectus nobis, deserunt sapiente voluptatum sit debitis deleniti! Eligendi earum quo blanditiis!</p>
           </div>
