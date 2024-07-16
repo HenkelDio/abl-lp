@@ -1,14 +1,14 @@
 'use client'
 
 import OptionHeader from "./OptionHeader";
-import logo from '../../../assets/logo.jpg';
+import logo from '../../../assets/logo_withot_bg.png';
 import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-gray-200 w-full h-[300px] p-10 relative bottom-0">
       <div className="md:flex md:flex-row flex-col gap-6 md:ml-20">
-        <Image src={logo} alt="logo" className="h-[60px] md mb-5 md:mb-0"/>
+        <Image src={logo} alt="logo" className="w-56 h-56 md mb-5 md:mb-0"/>
         <div className="md:h-[200px] md:w-1 bg-gray-400"></div>
         <div className="flex gap-9">
           <OptionHeader link='/' label='Home'/>

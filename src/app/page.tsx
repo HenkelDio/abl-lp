@@ -3,7 +3,7 @@
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import Card from "./components/Card";
 import { IoMdMail } from "react-icons/io";
-import p45 from '../../assets/p45.png';
+import P20 from '../../assets/P20.png';
 import GasCard from "./components/GasCard";
 import Link from "next/link";
 
@@ -25,7 +25,11 @@ export default function Index() {
           </div>
         </div>
       </section>
-      <section className="mt-20 md:h-[420px]">
+      <section className="md:w-full md:h-[500px] md:max-w-[1200px] mx-auto flex-col flex md:flex md:flex-row md:gap-10 justify-center items-center md:mt-24">
+       <GasCard image={P20} name="P20"/>
+       <GasCard image={P20} name="P40"/>
+      </section>
+      <section className="mt-40 md:h-[420px]">
         <h1 className="text-center font-semibold text-2xl">Contate-nos</h1>
         <div className="flex-col md:flex md:flex-row gap-10 justify-center items-center p-2 px-7">
           <Card label="Whatsapp" description="41 98409-5429" icon={<FaWhatsapp />} />
@@ -35,18 +39,14 @@ export default function Index() {
           <Card label="Telefone" description="41 3030-3030" icon={<FaPhoneAlt />} />
         </div>
       </section>
-      <section className="md:w-full md:h-[600px] md:max-w-[1200px] mx-auto flex-col flex md:flex md:flex-row md:gap-10 justify-center items-center">
-       <GasCard image={p45} name="P25"/>
-       <GasCard image={p45} name="P40"/>
-      </section>
-      <section className="mt-12 mb-28">
+      <section className="mt-0 mb-20">
         <h1 className="text-center font-semibold text-2xl mb-5">Um pouco sobre nós</h1>
-        <div className="bg-orange-400 w-full md:h-[280px] flex justify-center items-center p-5 gap-10 font-medium text-white">
+        <div className="bg-orange-400 w-full md:h-[300px] flex justify-center items-start p-5 gap-10 font-medium text-white">
           <div className="w-[300px]">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, assumenda earum odio minima asperiores enim dolor suscipit temporibus delectus nobis, deserunt sapiente voluptatum sit debitis deleniti! Eligendi earum quo blanditiis!</p>
+            <p>Fundada em 2001, a Gás Cavilato se dedica a fornecer soluções de gás com excelência e confiabilidade. Com mais de duas décadas de experiência no mercado, temos orgulho em ser revendedores autorizados da Supergasbras há mais de 10 anos, uma das marcas mais respeitadas no setor.</p>
           </div>
           <div className="w-[300px]">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, assumenda earum odio minima asperiores enim dolor suscipit temporibus delectus nobis, deserunt sapiente voluptatum sit debitis deleniti! Eligendi earum quo blanditiis!</p>
+            <p>Nossa estrutura de armazenagem ampla e bem localizada nos permite atender uma variedade de necessidades, desde o varejo residencial até condomínios, comércios, indústrias e atacadistas. Estamos comprometidos em proporcionar um atendimento de excelência, disponível 24 horas, para garantir que você nunca fique sem gás.</p>
           </div>
         </div>
       </section>

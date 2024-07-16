@@ -6,6 +6,8 @@ import OptionHeader from './OptionHeader';
 import { GiHamburgerMenu } from "react-icons/gi";
 import Link from 'next/link';
 import { OptionMobileHeader } from './OptionMobileHeader';
+import logo from '../../../assets/logo_withot_bg.png';
+import Image from 'next/image';
 
 export default function Header() {
   const [showHeader, setShowHeader] = useState(true);
@@ -56,11 +58,11 @@ export default function Header() {
        </AnimatePresence>
 
       <motion.header
-        className="flex justify-between items-center p-6 font-semibold sticky z-50 top-0 bg-white md:justify-around"
+        className="flex justify-between items-center p-6 md:p-0 font-semibold sticky z-50 top-0 bg-white md:justify-around"
       >
 
-        <div>
-          Gás Cavilato
+        <div className='w-28'>
+          <Image src={logo} alt='logo' />
         </div>
         <div className='text-2xl md:hidden' onClick={() => setShowMobileMenu(prevState => !prevState)}>
           <GiHamburgerMenu />
