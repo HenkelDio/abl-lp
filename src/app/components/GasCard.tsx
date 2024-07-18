@@ -24,10 +24,10 @@ type TProps = {
 export default function GasCard({ image, name }: TProps) {
   return (
     <>
-      <div className="bg-orange-0 md:h-[520px] md:w-[400px] rounded-md flex flex-col justify-center items-center relative mt-40 md:mt-0 ">
-        <h2 className="relative top-[-80px] font-bold text-xl">{name}</h2>
+      <div className="bg-orange-0 md:h-[520px] md:w-[400px] rounded-md flex flex-col justify-center items-center relative mt-32 md:mt-0 pb-5">
+        <h2 className="relative md:top-[-80px] top-[-50px] font-bold text-xl">{name}</h2>
         <div>
-          <Image src={image} alt="p20" className="relative md:top-[-50px] top-[-70px]"/>
+          <Image src={image} alt="p20" className="relative md:top-[-50px] top-[-50px]"/>
         </div>
         <div>
         <Link href={`https://api.whatsapp.com/send?phone=5541984095429&text=Ol%C3%A1,%20gostaria%20de%20realizar%20o%20pedido%20de%20um%20g%C3%A1s%20${name}.`}>

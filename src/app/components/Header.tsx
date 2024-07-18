@@ -58,10 +58,10 @@ export default function Header() {
        </AnimatePresence>
 
       <motion.header
-        className="flex justify-between items-center p-6 md:p-0 font-semibold sticky z-50 top-0 bg-white md:justify-around"
+        className="flex justify-between items-center px-6 md:p-0 font-semibold sticky z-50 top-0 bg-white md:justify-around"
       >
 
-        <div className='w-28'>
+        <div className='w-20 md:w-28'>
           <Image src={logo} alt='logo' />
         </div>
         <div className='text-2xl md:hidden' onClick={() => setShowMobileMenu(prevState => !prevState)}>

@@ -7,13 +7,12 @@ export default function Contact() {
     <div className="mb-10">
     <div className="flex flex-col w-full justify-center items-center ">
       <div className="flex-col w-full flex justify-center items-center">
-        <div className="bg-orange-0 w-full h-[200px] md:h-auto text-5xl font-bold flex flex-col justify-center items-center p-6">
-          <h1 className="relative">Nossos contatos</h1>
-          <div className="px-5 md:px-0">
+        <div className="bg-orange-0 md:h-[150px] w-full h-[200px] text-5xl font-bold flex justify-center items-center">
+          <h1>Contato</h1>
+        </div>
+        <div className="px-5 md:px-0 md:mt-10">
           <button type="submit" className="text-white font-semibold mt-5 bg-orange-0 hover:bg-orange-400 focus:ring-4 focus:outline-none focus:bg-orange-400 rounded-lg text-2xl md:text-sm sm:w-[300px] md:px-20 w-full py-5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:bg-orange-600">Entrar em contato por Whatsapp</button>
         </div>
-        </div>
-       
       </div>
       <div>
         <div className="flex-col md:flex-row flex gap-10 justify-center items-center p-2">

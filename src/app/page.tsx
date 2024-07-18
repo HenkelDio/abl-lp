@@ -39,14 +39,11 @@ export default function Index() {
           <Card label="Telefone" description="41 3030-3030" icon={<FaPhoneAlt />} />
         </div>
       </section>
-      <section className="mt-0 mb-20">
+      <section className="mt-20 mb-20">
         <h1 className="text-center font-semibold text-2xl mb-5">Um pouco sobre nós</h1>
-        <div className="bg-orange-400 w-full md:h-[300px] flex justify-center items-start p-5 gap-10 font-medium text-white">
+        <div className="bg-orange-400 w-full flex justify-center items-start p-5 gap-10 font-medium text-white">
           <div className="w-[300px]">
             <p>Fundada em 2001, a Gás Cavilato se dedica a fornecer soluções de gás com excelência e confiabilidade. Com mais de duas décadas de experiência no mercado, temos orgulho em ser revendedores autorizados da Supergasbras há mais de 10 anos, uma das marcas mais respeitadas no setor.</p>
-          </div>
-          <div className="w-[300px]">
-            <p>Nossa estrutura de armazenagem ampla e bem localizada nos permite atender uma variedade de necessidades, desde o varejo residencial até condomínios, comércios, indústrias e atacadistas. Estamos comprometidos em proporcionar um atendimento de excelência, disponível 24 horas, para garantir que você nunca fique sem gás.</p>
           </div>
         </div>
       </section>
