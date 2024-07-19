@@ -27,7 +27,7 @@ export default function Index() {
       </section>
       <section className="md:w-full md:h-[500px] md:max-w-[1200px] mx-auto flex-col flex md:flex md:flex-row md:gap-10 justify-center items-center md:mt-24">
        <GasCard image={P20} name="P20"/>
-       <GasCard image={P20} name="P40"/>
+       <GasCard image={P20} name="P45"/>
       </section>
       <section className="mt-40 md:h-[420px]">
         <h1 className="text-center font-semibold text-2xl">Contate-nos</h1>
