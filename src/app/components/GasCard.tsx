@@ -26,7 +26,7 @@ export default function GasCard({ image, name }: TProps) {
     <>
       <div className="bg-orange-0 md:h-[520px] md:w-[400px] rounded-md flex flex-col justify-center items-center relative mt-32 md:mt-0 pb-5">
         <h2 className="relative md:top-[-80px] top-[-50px] font-bold text-xl">{name}</h2>
-        <div className="h-[400px]">
+        <div className="md:h-[400px] h-[250px]">
           <Image src={image} alt="p20" className="w-full h-full"/>
         </div>
         <div>
