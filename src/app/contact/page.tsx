@@ -20,7 +20,7 @@ export default function Contact() {
           <div className="h-1 bg-gray-400"></div>
           <Card label="E-mail" description="cavilato@cavilato.com.br" icon={<IoMdMail  />} />
           <div className="h-1 bg-gray-400"></div>
-          <Card label="Telefone" description="41 3642-3314" icon={<FaPhoneAlt />} />
+          <Card label="Telefone" description="41 3642-3214" icon={<FaPhoneAlt />} />
         </div>
       </div>
     </div>

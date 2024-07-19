@@ -37,7 +37,7 @@ export default function Index() {
           <div className="md:w-1 md:h-28 h-1 bg-gray-400"></div>
           <Card label="E-mail" description="cavilato@cavilato.com.br" icon={<IoMdMail  />} />
           <div className="md:w-1 md:h-28 h-1 bg-gray-400"></div>
-          <Card label="Telefone" description="41 3642-3314" icon={<FaPhoneAlt />} />
+          <Card label="Telefone" description="41 3642-3214" icon={<FaPhoneAlt />} />
         </div>
       </section>
       <section className="mt-20 mb-20">
