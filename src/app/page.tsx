@@ -4,6 +4,7 @@ import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import Card from "./components/Card";
 import { IoMdMail } from "react-icons/io";
 import P20 from '../../assets/P20.png';
+import P45 from '../../assets/P45.png';
 import GasCard from "./components/GasCard";
 import Link from "next/link";
 
@@ -27,7 +28,7 @@ export default function Index() {
       </section>
       <section className="md:w-full md:h-[500px] md:max-w-[1200px] mx-auto flex-col flex md:flex md:flex-row md:gap-10 justify-center items-center md:mt-24">
        <GasCard image={P20} name="P20"/>
-       <GasCard image={P20} name="P45"/>
+       <GasCard image={P45} name="P45"/>
       </section>
       <section className="mt-40 md:h-[420px]">
         <h1 className="text-center font-semibold text-2xl">Contate-nos</h1>
@@ -36,7 +37,7 @@ export default function Index() {
           <div className="md:w-1 md:h-28 h-1 bg-gray-400"></div>
           <Card label="E-mail" description="cavilato@cavilato.com.br" icon={<IoMdMail  />} />
           <div className="md:w-1 md:h-28 h-1 bg-gray-400"></div>
-          <Card label="Telefone" description="41 3030-3030" icon={<FaPhoneAlt />} />
+          <Card label="Telefone" description="41 3642-3314" icon={<FaPhoneAlt />} />
         </div>
       </section>
       <section className="mt-20 mb-20">
