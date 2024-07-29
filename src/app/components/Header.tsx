@@ -4,17 +4,20 @@ import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import OptionHeader from './OptionHeader';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseSharp } from "react-icons/io5";
 import Link from 'next/link';
 import { OptionMobileHeader } from './OptionMobileHeader';
-import logo from '../../../assets/logo_withot_bg.png';
 import Image from 'next/image';
+import logo from '../../../assets/logo.png';
+import logoModa from '../../../assets/logo-moda.png';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
-
+  const pathname = usePathname();
 
   const controlHeader = () => {
     if (typeof window !== 'undefined') {
@@ -37,41 +40,47 @@ export default function Header() {
   }, [lastScrollY]);
 
   return (
-      <div>
-        <AnimatePresence>
-       {
-        showMobileMenu && 
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-        >
-           <div className="flex-col flex gap-2 md:hidden p-7">
-            <OptionMobileHeader label='Home' link='/' setShowMobileMenu={setShowMobileMenu}/>
-            <OptionMobileHeader label='Pedir Gás' link='/order' setShowMobileMenu={setShowMobileMenu}/>
-            <OptionMobileHeader label='Contato' link='/contact' setShowMobileMenu={setShowMobileMenu}/>
-            <OptionMobileHeader label='Sobre' link='/about' setShowMobileMenu={setShowMobileMenu}/>
-          </div>
-        </motion.div>
-       }
-       </AnimatePresence>
+    <div>
+      <AnimatePresence>
+        {showMobileMenu && (
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
+            <div className="flex flex-col gap-2 p-7 bg-white z-50">
+              <OptionMobileHeader label='ABL STOCK' link='/' setShowMobileMenu={setShowMobileMenu} />
+              <OptionMobileHeader label='ABL MODA' link='/moda' setShowMobileMenu={setShowMobileMenu} />
+              <OptionMobileHeader label='Contato' link='/contact' setShowMobileMenu={setShowMobileMenu} />
+              <OptionMobileHeader label='Sobre' link='/about' setShowMobileMenu={setShowMobileMenu} />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <motion.header
-        className="flex justify-between items-center px-6 md:p-0 font-semibold sticky z-50 top-0 bg-white md:justify-around"
+        className="flex justify-between items-center px-6 md:px-16 font-semibold sticky z-40 top-0 bg-blueDefault-0 md:justify-between text-white h-[140px]"
+        initial={{ y: 0 }}
+        animate={{ y: showMobileMenu ? 50 : 0 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
       >
+        <div className='text-2xl cursor-pointer' onClick={() => setShowMobileMenu(prevState => !prevState)}>
+          {showMobileMenu ? <IoCloseSharp /> : <GiHamburgerMenu />}
+        </div>
 
-        <div className='w-20 md:w-28'>
-          <Image src={logo} alt='logo' />
+        <div>
+          <h1 className='text-3xl font-bold'>
+            {
+              pathname === '/moda'
+              ? 'ABL MODA'
+              : 'ABL STOCK'
+            }
+          </h1>
         </div>
-        <div className='text-2xl md:hidden' onClick={() => setShowMobileMenu(prevState => !prevState)}>
-          <GiHamburgerMenu />
-        </div>
-        <div className="md:flex gap-9 hidden">
-          <OptionHeader link='/' label='Home' />
-          <OptionHeader link='/order' label='Pedir Gás' />
-          <OptionHeader link='/contact' label='Contato' />
-          <OptionHeader link='/about' label='Sobre' />
+
+        <div className='w-[60px]'>
+          <Image src={pathname === '/moda' ? logoModa : logo} alt='logo' />
         </div>
       </motion.header>
     </div>
