@@ -7,7 +7,7 @@ import WhatsappIcon from "./components/WhatsappIcon";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Cavilato Gás",
+  title: "ABL STOCK",
   description: "Fundada em 2001, a Gás Cavilato se dedica a fornecer soluções de gás com excelência e confiabilidade. Com mais de duas décadas de experiência no mercado, temos orgulho em ser revendedores autorizados da Supergasbras há mais de 10 anos, uma das marcas mais respeitadas no setor.",
   keywords: "gás, soluções de gás, Supergasbras, revendedores de gás, gás de cozinha, Cavilato Gás",
   author: "Cavilato Gás",
