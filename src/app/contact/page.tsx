@@ -1,29 +1,86 @@
-import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
-import Card from "../components/Card";
-
 export default function Contact() {
   return (
-    <div className="mb-10">
-    <div className="flex flex-col w-full justify-center items-center ">
-      <div className="flex-col w-full flex justify-center items-center">
-        <div className="bg-orange-0 md:h-[150px] w-full h-[200px] text-5xl font-bold flex justify-center items-center">
+    <div className="mb-10 mt-10">
+      <div className="flex flex-col w-full justify-center items-center">
+        <div className="text-5xl font-bold text-center">
           <h1>Contato</h1>
         </div>
-        <div className="px-5 md:px-0 md:mt-10">
-          <button type="submit" className="text-white font-semibold mt-5 bg-orange-0 hover:bg-orange-400 focus:ring-4 focus:outline-none focus:bg-orange-400 rounded-lg text-2xl md:text-sm sm:w-[300px] md:px-20 w-full py-5 text-center dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:bg-orange-600">Entrar em contato por Whatsapp</button>
+
+        <div className="px-5 md:px-0 md:mt-10 mb-10">
+          <button
+            type="submit"
+            className="text-white font-semibold bg-orange-0 hover:bg-blue-950 focus:ring-4 focus:outline-none focus:bg-orange-400 rounded-lg text-2xl md:text-sm sm:w-[300px] md:px-20 w-full py-5 text-center dark:bg-blueDefault-0 dark:hover:bg-blue-950  dark:focus:bg-blue-950 "
+          >
+            Entrar em contato por Whatsapp
+          </button>
         </div>
-      </div>
-      <div>
-        <div className="flex-col md:flex-row flex gap-10 justify-center items-center p-2">
-          <Card label="Whatsapp" description="41 98409-5429" icon={<FaWhatsapp />} />
-          <div className="h-1 bg-gray-400"></div>
-          <Card label="E-mail" description="cavilato@cavilato.com.br" icon={<IoMdMail  />} />
-          <div className="h-1 bg-gray-400"></div>
-          <Card label="Telefone" description="41 3642-3214" icon={<FaPhoneAlt />} />
+
+        <div className="flex items-center gap-5 justify-center mb-10">
+          <div className="w-[100px] h-[2px] bg-gray-600"></div>
+          <p className="font-semibold text-gray-700">OU</p>
+          <div className="w-[100px] h-[2px] bg-gray-600"></div>
         </div>
+
+        <form className="flex flex-col w-[300px] gap-5" action="https://formsubmit.co/willianhenkel@gmail.com" method="POST">
+
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="Nova mensagem!"></input>
+
+          <p className="text-center">Entre em contato por e-mail!</p>
+          <div>
+            <label
+              htmlFor="email"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
+            >
+              Seu melhor e-mail
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 dark:white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="examplo@gmail.com"
+              required
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="name"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
+            >
+              Seu nome
+            </label>
+            <input
+              type="name"
+              id="name"
+              name="name"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 dark:white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="examplo@gmail.com"
+              required
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="message"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
+            >
+              Assunto
+            </label>
+            <textarea
+              name="message"
+              rows={4}
+              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Digite o motivo do contato"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="text-white font-semibold bg-orange-0 hover:bg-blue-950 focus:ring-4 focus:outline-none focus:bg-orange-400 rounded-lg text-2xl md:text-sm sm:w-[300px] md:px-20 w-full py-5 text-center dark:bg-blueDefault-0 dark:hover:bg-blue-950  dark:focus:bg-blue-950"
+          >
+            ENVIAR
+          </button>
+        </form>
       </div>
     </div>
-  </div>
-  )
+  );
 }

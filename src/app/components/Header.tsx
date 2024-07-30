@@ -52,6 +52,7 @@ export default function Header() {
             <div className="flex flex-col gap-2 p-7 bg-white z-50">
               <OptionMobileHeader label='ABL STOCK' link='/' setShowMobileMenu={setShowMobileMenu} />
               <OptionMobileHeader label='ABL MODA' link='/moda' setShowMobileMenu={setShowMobileMenu} />
+              <OptionMobileHeader label='Produtos' link='/products' setShowMobileMenu={setShowMobileMenu} />
               <OptionMobileHeader label='Contato' link='/contact' setShowMobileMenu={setShowMobileMenu} />
               <OptionMobileHeader label='Sobre' link='/about' setShowMobileMenu={setShowMobileMenu} />
             </div>
