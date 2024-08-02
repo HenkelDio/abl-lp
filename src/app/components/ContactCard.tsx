@@ -7,7 +7,7 @@ type TProps = {
 
 export function ContactCard({ label, title, icon}: TProps) {
   return(
-    <div className="flex flex-col items-center rounded-md p-10 min-w-[400px]" style={{ border: '2px solid #ccc'}}>
+    <div className="flex flex-col items-center rounded-md p-10 md:min-w-[400px] min-w-[350px]" style={{ border: '2px solid #ccc'}}>
       <div className="text-6xl">
         {icon}
       </div>

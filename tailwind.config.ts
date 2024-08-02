@@ -16,6 +16,9 @@ const config: Config = {
       colors: {
         blueDefault: {
           0: "#030D25"
+        },
+        blueButton: {
+          0: "#567EFB"
         }
       },
 

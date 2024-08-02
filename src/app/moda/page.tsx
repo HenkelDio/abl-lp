@@ -5,7 +5,7 @@ export default function Moda() {
     <div className="m-auto mt-10">
       <section className="max-w-[1000px] m-auto">
         <h1 className="font-bold text-center text-4xl">Sobre a ABL MODA</h1>
-        <p className="mt-6 text-gray-600">
+        <p className="mt-6 text-gray-600 md:p-0 px-5">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
           facere modi voluptate impedit sequi consequatur accusantium quas.
           Natus esse deleniti delectus dolorum dolore. Quasi minima itaque sint
@@ -26,7 +26,7 @@ export default function Moda() {
         </p>
       </section>
 
-      <section className="max-w-[700px] m-auto mt-20">
+      <section className="max-w-[700px] m-auto mt-20 md:p-0 p-5">
         <ProductsModa />
       </section>
     </div>

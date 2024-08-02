@@ -1,3 +1,7 @@
+import { TbBrandShopee } from "react-icons/tb";
+import CardFind from "../components/CardFind";
+import { FaInstagram } from "react-icons/fa";
+
 export default function Contact() {
   return (
     <div className="mb-10 mt-10">
@@ -6,7 +10,7 @@ export default function Contact() {
           <h1>Contato</h1>
         </div>
 
-        <div className="px-5 md:px-0 md:mt-10 mb-10">
+        <div className="px-5 md:px-0 mt-10 mb-10">
           <button
             type="submit"
             className="text-white font-semibold bg-orange-0 hover:bg-blue-950 focus:ring-4 focus:outline-none focus:bg-orange-400 rounded-lg text-2xl md:text-sm sm:w-[300px] md:px-20 w-full py-5 text-center dark:bg-blueDefault-0 dark:hover:bg-blue-950  dark:focus:bg-blue-950 "
@@ -81,6 +85,17 @@ export default function Contact() {
           </button>
         </form>
       </div>
+
+      <section className="dark:bg-gray-900 m-auto mt-20 text-white p-10">
+        <div className="md:max-w-[1000px] w-auto m-auto">
+          <h1 className="font-bold text-center text-4xl">Onde nos encontrar</h1>
+          <div className="flex gap-5 justify-center mt-5 md:flex-row flex-col">
+            <CardFind icon={<TbBrandShopee />} title="Shopee"/>
+            <CardFind icon={<FaInstagram/>} title="Instagram"/>
+            <CardFind icon={<TbBrandShopee />} title="Shopee"/>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

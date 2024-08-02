@@ -17,13 +17,13 @@ function MultipleItems() {
   return (
     <div className="w-full h-auto max-w-full">
     <Slider {...settings}>
-      <div className="flex justify-center items-center h-[500px]">
+      <div className="flex justify-center items-center md:h-[500px] h-[200px]">
         <div
           className="rounded-3xl w-full h-full bg-cover bg-center"
           style={{ backgroundImage: `url(${shoe.src})` }}
         />
       </div>
-      <div className="flex justify-center items-center h-[500px]">
+      <div className="flex justify-center items-center md:h-[500px] h-[200px]">
         <div
           className="rounded-3xl w-full h-full bg-cover bg-center"
           style={{ backgroundImage: `url(${shoe2.src})` }}

@@ -14,39 +14,27 @@ export default function Index() {
     <div className="m-auto mt-10">
       <section className="max-w-[1000px] m-auto">
         <h1 className="font-bold text-center text-4xl">Nossa loja</h1>
-        <p className="mt-6 text-gray-600">
+        <p className="mt-6 text-gray-600 md:p-0 px-5">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
           facere modi voluptate impedit sequi consequatur accusantium quas.
           Natus esse deleniti delectus dolorum dolore. Quasi minima itaque sint
           maiores sunt voluptas. Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Inventore fugiat repudiandae nemo natus delectus
-          temporibus consequuntur. Iste, omnis distinctio dolorum at eveniet
-          odio accusamus et dolores, suscipit iure numquam hic? Lorem, ipsum
-          dolor sit amet consectetur adipisicing elit. Eveniet, sunt nulla id
-          iste fugit soluta. Quod, veritatis animi! Id nemo quaerat fugit
-          voluptas iste dolores tempora harum quidem, dolor numquam? Lorem
-          ipsum, dolor sit amet consectetur adipisicing elit. Maxime placeat eos
-          laborum perferendis neque, qui fugit at necessitatibus suscipit
-          aliquam sed consequuntur ullam temporibus assumenda repellendus quia
-          iusto blanditiis itaque. Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Maxime placeat eos laborum perferendis neque, qui
-          fugit at necessitatibus suscipit aliquam sed consequuntur ullam
-          temporibus assumenda repellendus quia iusto blanditiis itaque.
         </p>
       </section>
 
       <section className="max-w-[1200px] m-auto">
         <h1 className="font-bold text-center text-4xl mt-20">Produtos</h1>
-        <div className="mt-6">
+        <div className="mt-6 md:p-0 px-6">
           <SimpleSlider />
           <MultipleItems />
         </div>
       </section>
 
-      <section className="dark:bg-gray-900 m-auto mt-20 text-white p-10">
-        <div className="max-w-[1000px] m-auto">
+      <section className="dark:bg-gray-900 m-auto mt-20 text-white md:p-10 p-5">
+        <div className="md:max-w-[1000px] m-auto w-full">
           <h1 className="font-bold text-center text-4xl">Onde nos encontrar</h1>
-          <div className="flex gap-5 justify-center mt-5">
+          <div className="flex gap-5 justify-center mt-5 md:flex-row flex-col">
             <CardFind icon={<TbBrandShopee />} title="Shopee"/>
             <CardFind icon={<FaInstagram />} title="Instagram"/>
             <CardFind icon={<TbBrandShopee />} title="Shopee"/>
@@ -56,7 +44,7 @@ export default function Index() {
 
       <section className="max-w-[1000px] m-auto mt-20">
         <h1 className="font-bold text-center text-4xl">Contato</h1>
-        <div className="flex justify-center mt-10 gap-10">
+        <div className="flex justify-center mt-10 gap-10 flex-wrap">
           <ContactCard
             label="example@mail.com"
             title="e-mail"

@@ -71,7 +71,7 @@ export default function Header() {
         </div>
 
         <div>
-          <h1 className='text-3xl font-bold'>
+          <h1 className='text-2xl font-bold md:text-3xl'>
             {
               pathname === '/moda'
               ? 'ABL MODA'
@@ -80,7 +80,7 @@ export default function Header() {
           </h1>
         </div>
 
-        <div className='w-[60px]'>
+        <div className='md:w-[60px] w-[45px]'>
           <Image src={pathname === '/moda' ? logoModa : logo} alt='logo' />
         </div>
       </motion.header>

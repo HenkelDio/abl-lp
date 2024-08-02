@@ -5,8 +5,8 @@ import logo2 from '../../../assets/logo_complete2.png';
 export default function About() {
   return (
     <div className="mb-10">
-        <div className="flex md:flex-row flex-col justify-center items-top md:gap-52 gap-7 md:mt-12">
-          <div className="flex flex-col gap-10">
+        <div className="flex md:flex-row flex-col justify-center items-top md:gap-52 gap-7 mt-10">
+          <div className="flex flex-col gap-10 items-center">
             <h1 className="font-bold text-5xl">Sobre a<br></br>ABL STOCK</h1>
             <div className='flex gap-10'>
               <Image src={logo} alt="logo" width={110}/>
