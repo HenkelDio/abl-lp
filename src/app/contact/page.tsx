@@ -1,6 +1,6 @@
 import { TbBrandShopee } from "react-icons/tb";
 import CardFind from "../components/CardFind";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -90,9 +90,8 @@ export default function Contact() {
         <div className="md:max-w-[1000px] w-auto m-auto">
           <h1 className="font-bold text-center text-4xl">Onde nos encontrar</h1>
           <div className="flex gap-5 justify-center mt-5 md:flex-row flex-col">
-            <CardFind icon={<TbBrandShopee />} title="Shopee"/>
+            <CardFind icon={<FaFacebook />} title="Facebook"/>
             <CardFind icon={<FaInstagram/>} title="Instagram"/>
-            <CardFind icon={<TbBrandShopee />} title="Shopee"/>
           </div>
         </div>
       </section>

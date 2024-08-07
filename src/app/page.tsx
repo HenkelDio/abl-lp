@@ -4,7 +4,7 @@ import SimpleSlider from "./components/SimpleSlider";
 import MultipleItems from "./components/MultipleHeader";
 import { ContactCard } from "./components/ContactCard";
 import { MdAlternateEmail } from "react-icons/md";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import CardFind from "./components/CardFind";
 import { TbBrandShopee } from "react-icons/tb";
 import { FaInstagram } from "react-icons/fa";
@@ -14,12 +14,8 @@ export default function Index() {
     <div className="m-auto mt-10">
       <section className="max-w-[1000px] m-auto">
         <h1 className="font-bold text-center text-4xl">Nossa loja</h1>
-        <p className="mt-6 text-gray-600 md:p-0 px-5">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
-          facere modi voluptate impedit sequi consequatur accusantium quas.
-          Natus esse deleniti delectus dolorum dolore. Quasi minima itaque sint
-          maiores sunt voluptas. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Inventore fugiat repudiandae nemo natus delectus
+        <p className="mt-6 text-gray-600 md:p-0 px-5 text-xl text-center">
+          A ABL STOCK é uma empresa especializada em <b>vendas online</b>, atuando principalmente através das plataformas Facebook e Instagram. A ABL STOCK é inovadora no segmento de vendas online, dedicada a fornecer uma experiência de compra conveniente e satisfatória para seus clientes
         </p>
       </section>
 
@@ -35,9 +31,8 @@ export default function Index() {
         <div className="md:max-w-[1000px] m-auto w-full">
           <h1 className="font-bold text-center text-4xl">Onde nos encontrar</h1>
           <div className="flex gap-5 justify-center mt-5 md:flex-row flex-col">
-            <CardFind icon={<TbBrandShopee />} title="Shopee"/>
+            <CardFind icon={<FaFacebook />} title="Facebook"/>
             <CardFind icon={<FaInstagram />} title="Instagram"/>
-            <CardFind icon={<TbBrandShopee />} title="Shopee"/>
           </div>
         </div>
       </section>
@@ -46,12 +41,12 @@ export default function Index() {
         <h1 className="font-bold text-center text-4xl">Contato</h1>
         <div className="flex justify-center mt-10 gap-10 flex-wrap">
           <ContactCard
-            label="example@mail.com"
+            label="ablstock@ablstock.com"
             title="e-mail"
             icon={<MdAlternateEmail />}
           />
           <ContactCard
-            label="(41) 99999-9999"
+            label="(41) 996820-3318"
             title="whatsapp"
             icon={<FaWhatsapp />}
           />

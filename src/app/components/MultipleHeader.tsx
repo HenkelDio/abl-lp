@@ -1,8 +1,8 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import shoe from '../../../assets/shoe3.jpg';
-import shoe2 from '../../../assets/shoe2.jpg';
+import product1 from '../../../assets/product4.jpeg';
+import product2 from '../../../assets/product11.jpeg';
 
 function MultipleItems() {
   const settings = {
@@ -20,13 +20,13 @@ function MultipleItems() {
       <div className="flex justify-center items-center md:h-[500px] h-[200px]">
         <div
           className="rounded-3xl w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: `url(${shoe.src})` }}
+          style={{ backgroundImage: `url(${product1.src})` }}
         />
       </div>
       <div className="flex justify-center items-center md:h-[500px] h-[200px]">
         <div
           className="rounded-3xl w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: `url(${shoe2.src})` }}
+          style={{ backgroundImage: `url(${product2.src})` }}
         />
       </div>
     </Slider>

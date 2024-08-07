@@ -1,8 +1,8 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import shoe from '../../../assets/sapato.jpg';
-import shoe1 from '../../../assets/shoe.jpg';
+import phone from '../../../assets/product2.jpeg';
+import product1 from '../../../assets/product10.jpeg';
 
 function SamplePrevArrow(props: any) {
   const { className, style, onClick } = props;
@@ -34,13 +34,13 @@ export default function SimpleSlider() {
         <div className="flex justify-center items-center md:h-[500px] h-[300px]">
           <div
             className="rounded-3xl w-full h-full bg-cover bg-center"
-            style={{ backgroundImage: `url(${shoe.src})` }}
+            style={{ backgroundImage: `url(${phone.src})` }}
           />
         </div>
         <div className="flex justify-center items-center md:h-[500px] h-[300px]">
           <div
-            className="rounded-3xl w-full h-full bg-cover bg-center"
-            style={{ backgroundImage: `url(${shoe1.src})` }}
+            className="rounded-3xl w-full h-full  bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${product1.src})` }}
           />
         </div>
       </Slider>

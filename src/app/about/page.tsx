@@ -15,19 +15,19 @@ export default function About() {
           </div>
           <div className="w-[400px] p-5 md:p-0">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro aperiam laboriosam, maiores assumenda ab temporibus delectus hic. Maiores est, non velit sapiente, quae esse deleniti officiis rerum optio voluptates expedita?
+              A ABL STOCK é uma empresa especializada em vendas online, atuando principalmente através das plataformas Facebook e Instagram. A ABL STOCK é inovadora no segmento de vendas online, dedicada a fornecer uma experiência de compra conveniente e satisfatória para seus clientes
             </p>
             <br></br>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga sunt, quidem sequi assumenda numquam repudiandae totam pariatur eum ex commodi, nemo earum ipsam facilis dolorum corporis ullam, explicabo et. Praesentium?
+              Com forte presença nas redes sociais, especialmente no Facebook e Instagram, a ABL STOCK se destaca pela oferta diversificada de produtos de varejo, atendendo a diversas necessidades e preferências dos consumidores. A empresa prioriza a qualidade dos produtos e o atendimento ao cliente, garantindo que cada compra seja uma experiência positiva
             </p>
             <br></br>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio eum inventore animi nam sunt? Ducimus natus iusto, sunt dolore fugiat quisquam tempora unde! Maiores, nesciunt saepe ut perferendis commodi ad!
+              Através de postagens atrativas e interativas nas redes sociais, a ABL STOCK mantém seus clientes informados sobre as últimas novidades, promoções e lançamentos. Além disso, a interação direta com os consumidores por meio de comentários e mensagens privadas fortalece o relacionamento e a confiança na marca
             </p>
             <br></br>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero hic beatae eaque officia dignissimos reiciendis rerum commodi, praesentium non quidem sunt rem earum, dolores exercitationem velit voluptatum, facilis unde maxime.
+              Com um foco constante na inovação e na satisfação do cliente, a ABL STOCK continua a expandir seu catálogo e melhorar seus serviços, consolidando-se como uma escolha confiável e acessível no mercado de vendas online.
             </p>
           </div>
         </div>
