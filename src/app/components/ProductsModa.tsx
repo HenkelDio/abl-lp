@@ -1,4 +1,7 @@
 import Image from "next/image";
+import phone from '../../../assets/product14.jpeg';
+import product1 from '../../../assets/product5.jpeg';
+import product2 from '../../../assets/product10.jpeg';
 
 export default function ProductsModa() {
   return (
@@ -6,7 +9,7 @@ export default function ProductsModa() {
       <div>
         <Image
           className="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"
+          src={phone.src}
           alt=""
           width={700}  // Specify the width
           height={300} // Specify the height
@@ -16,7 +19,7 @@ export default function ProductsModa() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+            src={product1.src}
             alt=""
             width={150} // Specify the width
             height={150} // Specify the height
@@ -25,7 +28,7 @@ export default function ProductsModa() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+            src={product1.src}
             alt=""
             width={150} // Specify the width
             height={150} // Specify the height
@@ -34,7 +37,7 @@ export default function ProductsModa() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+            src={product1.src}
             alt=""
             width={150} // Specify the width
             height={150} // Specify the height
@@ -43,7 +46,7 @@ export default function ProductsModa() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+            src={product1.src}
             alt=""
             width={150} // Specify the width
             height={150} // Specify the height
@@ -52,7 +55,7 @@ export default function ProductsModa() {
         <div>
           <Image
             className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+            src={product1.src}
             alt=""
             width={150} // Specify the width
             height={150} // Specify the height

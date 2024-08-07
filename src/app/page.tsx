@@ -46,7 +46,7 @@ export default function Index() {
             icon={<MdAlternateEmail />}
           />
           <ContactCard
-            label="(41) 996820-3318"
+            label="(41) 99682-0318"
             title="whatsapp"
             icon={<FaWhatsapp />}
           />

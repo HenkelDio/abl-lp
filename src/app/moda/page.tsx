@@ -1,3 +1,5 @@
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import CardFind from "../components/CardFind";
 import ProductsModa from "../components/ProductsModa";
 
 export default function Moda() {
@@ -19,8 +21,18 @@ export default function Moda() {
           </p>
       </section>
 
-      <section className="max-w-[700px] m-auto mt-20 md:p-0 p-5">
+      {/* <section className="max-w-[700px] m-auto mt-20 md:p-0 p-5">
         <ProductsModa />
+      </section> */}
+
+      <section className="dark:bg-gray-900 m-auto mt-20 text-white p-10">
+        <div className="md:max-w-[1000px] w-auto m-auto">
+          <h1 className="font-bold text-center text-4xl">Onde nos encontrar</h1>
+          <div className="flex gap-5 justify-center mt-5 md:flex-row flex-col">
+            <CardFind icon={<FaFacebook />} title="Facebook"/>
+            <CardFind icon={<FaInstagram/>} title="Instagram"/>
+          </div>
+        </div>
       </section>
     </div>
   )

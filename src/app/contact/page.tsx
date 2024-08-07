@@ -25,7 +25,7 @@ export default function Contact() {
           <div className="w-[100px] h-[2px] bg-gray-600"></div>
         </div>
 
-        <form className="flex flex-col w-[300px] gap-5" action="https://formsubmit.co/willianhenkel@gmail.com" method="POST">
+        <form className="flex flex-col w-[300px] gap-5" action="https://formsubmit.co/ablstock@ablstock.com" method="POST">
 
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_subject" value="Nova mensagem!"></input>

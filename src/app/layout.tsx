@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {  Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -8,25 +8,25 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "ABL STOCK",
-  description: "Fundada em 2001, a Gás Cavilato se dedica a fornecer soluções de gás com excelência e confiabilidade. Com mais de duas décadas de experiência no mercado, temos orgulho em ser revendedores autorizados da Supergasbras há mais de 10 anos, uma das marcas mais respeitadas no setor.",
-  keywords: "gás, soluções de gás, Supergasbras, revendedores de gás, gás de cozinha, Cavilato Gás",
-  author: "Cavilato Gás",
+  description: "A ABL STOCK é uma empresa especializada em vendas online, atuando principalmente através das plataformas Facebook e Instagram. A ABL STOCK é inovadora no segmento de vendas online, dedicada a fornecer uma experiência de compra conveniente e satisfatória para seus clientes.",
+  keywords: "vendas online, e-commerce, Facebook, Instagram, compras convenientes, ABL STOCK, experiência de compra, loja online",
+  author: "ABL STOCK",
   charset: "UTF-8",
   robots: "index, follow",
   og: {
-    title: "Cavilato Gás",
+    title: "ABL STOCK",
     type: "website",
-    url: "http://www.cavilatogas.com.br",
-    image: "http://www.cavilatogas.com.br/logo.png",
-    description: "Fundada em 2001, a Gás Cavilato se dedica a fornecer soluções de gás com excelência e confiabilidade. Com mais de duas décadas de experiência no mercado, temos orgulho em ser revendedores autorizados da Supergasbras há mais de 10 anos, uma das marcas mais respeitadas no setor."
+    url: "http://www.ablstock.com.br",
+    image: "http://www.ablstock.com.br/logo.png",
+    description: "A ABL STOCK é uma empresa especializada em vendas online, atuando principalmente através das plataformas Facebook e Instagram. A ABL STOCK é inovadora no segmento de vendas online, dedicada a fornecer uma experiência de compra conveniente e satisfatória para seus clientes."
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cavilato Gás",
-    description: "Fundada em 2001, a Gás Cavilato se dedica a fornecer soluções de gás com excelência e confiabilidade. Com mais de duas décadas de experiência no mercado, temos orgulho em ser revendedores autorizados da Supergasbras há mais de 10 anos, uma das marcas mais respeitadas no setor.",
-    image: "http://www.cavilatogas.com.br/logo.png"
+    title: "ABL STOCK",
+    description: "A ABL STOCK é uma empresa especializada em vendas online, atuando principalmente através das plataformas Facebook e Instagram. A ABL STOCK é inovadora no segmento de vendas online, dedicada a fornecer uma experiência de compra conveniente e satisfatória para seus clientes.",
+    image: "http://www.ablstock.com.br/logo.png"
   },
-  canonical: "http://www.cavilatogas.com.br",
+  canonical: "http://www.ablstock.com.br",
   icons: {
     icon: '/favicon.ico',
   },
@@ -36,7 +36,6 @@ export const viewport = {
   width: "device-width",
   initialScale: 1.0,
 };
-
 
 export default function RootLayout({
   children,
