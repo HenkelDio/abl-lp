@@ -31,8 +31,8 @@ export default function Index() {
         <div className="md:max-w-[1000px] m-auto w-full">
           <h1 className="font-bold text-center text-4xl">Onde nos encontrar</h1>
           <div className="flex gap-5 justify-center mt-5 md:flex-row flex-col">
-            <CardFind icon={<FaFacebook />} title="Facebook"/>
-            <CardFind icon={<FaInstagram />} title="Instagram"/>
+          <CardFind icon={<FaFacebook />} title="Facebook" path="https://www.facebook.com/profile.php?id=61561372899259"/>
+          <CardFind icon={<FaInstagram/>} title="Instagram" path="https://www.instagram.com/abl.stock/?fbclid=IwZXh0bgNhZW0CMTEAAR10DbJpdt71yf5eZwGu7AgLU_VPqGroyN1O_AmKBP9njtljo57t07X4uDc_aem_uIDjX4dTOVubzf8L4bQJjA"/>
           </div>
         </div>
       </section>
