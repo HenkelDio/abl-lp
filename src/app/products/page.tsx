@@ -1,16 +1,20 @@
 import Image from "next/image";
 
-// Função para importar todas as imagens e garantir que sejam únicas
-const importAll = (r) => {
-  return [...new Set(r.keys().map(r))];
+// @ts-ignore: Disables TypeScript type checking for the next line
+const importAll = (r: __WebpackModuleApi.RequireContext) => {
+  const images: { [key: string]: any } = {}; // Define o tipo correto para o objeto images
+  r.keys().forEach((item: string) => {
+    images[item] = r(item);
+  });
+  return Object.values(images);
 };
 
-// Importa as imagens da pasta especificada
 const images = importAll(
+  // @ts-ignore: Ignora o erro do TypeScript relacionado ao 'require.context'
   require.context('../../../assets/products', false, /\.(jpeg|jpg|png|gif)$/)
 );
 
-const ProductCard = ({ imageSrc }) => (
+const ProductCard = ({ imageSrc }: { imageSrc: string }) => (
   <div className="shadow-md rounded-md">
     <Image
       className="h-auto max-w-full rounded-lg"
@@ -30,7 +34,7 @@ export default function Products() {
       </div>
       <section className="p-20 overflow-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {images.map((image, index) => (
+          {images.map((image: any, index: number) => (
             <ProductCard imageSrc={image.default.src} key={index} />
           ))}
         </div>
