@@ -4,14 +4,19 @@ import Image from "next/image";
 const importAll = (r: __WebpackModuleApi.RequireContext) => {
   const images: { [key: string]: any } = {}; // Define o tipo correto para o objeto images
   r.keys().forEach((item: string) => {
-    images[item] = r(item);
+    const key = item.replace('./', ''); // Remove './' do início da chave
+    images[key] = r(item);
   });
   return Object.values(images);
 };
 
-const images = importAll(
-  // @ts-ignore: Ignora o erro do TypeScript relacionado ao 'require.context'
-  require.context('../../../assets/products', false, /\.(jpeg|jpg|png|gif)$/)
+const images = Array.from(
+  new Set(
+    importAll(
+      // @ts-ignore: Ignora o erro do TypeScript relacionado ao 'require.context'
+      require.context('../../../assets/products', false, /\.(jpeg|jpg|png|gif)$/)
+    )
+  )
 );
 
 const ProductCard = ({ imageSrc }: { imageSrc: string }) => (
